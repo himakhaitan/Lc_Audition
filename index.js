@@ -1,8 +1,6 @@
 const path = require('path')
 const bodyParser = require('body-parser')
 
-
-
 const express = require('express')
 const port = process.env.PORT || 3000
 const app = express()
@@ -10,7 +8,7 @@ app.use(express.json())
 
 app.use(bodyParser.urlencoded({ extended: false }));
 require("./src/db/conn")
-const Register = require('./src/models/register');
+const User = require('./src/models/register');
 
 
 const publicDirectoryPath = path.join(__dirname, './public')
@@ -28,9 +26,13 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/login.html'));
 })
 
+app.post('/login', async (req, res )=> {
+
+})
+
 app.post('/register', async (req, res) => {
   try {
-    const data = new Register(req.body)
+    const data = new User(req.body)
     const register = await data.save();
     res.sendFile(path.join(__dirname + '/public/thank.html'));
   } catch (error) {
@@ -41,7 +43,9 @@ app.post('/register', async (req, res) => {
 
   }
 })
-
+app.get('/thank', (req, res) => {
+  res.sendFile(path.join(__dirname + '/public/thank.html'));
+})
 app.listen(port, () => {
   console.log(`Server started on the port ${port}`)
 })

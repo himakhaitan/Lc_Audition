@@ -1,0 +1,77 @@
+.thank {
+  padding: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.log {
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #fff;
+    margin: 0 1rem;
+  }
+
+  &__thank {
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.8),
+      rgba($color-grey-light-2, 0.8)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.interact {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 10rem;
+    
+}
+
+.contact {
+    fill: #262626;
+    background-color: #ffffff;
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    
+}
+
+.log__follow {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 4rem;
+  color: #fff;
+  text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.8),
+      rgba($color-grey-light-2, 0.8)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
