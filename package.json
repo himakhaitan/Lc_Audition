@@ -1,0 +1,42 @@
+{
+  "name": "lc-audition",
+  "version": "1.0.0",
+  "description": "Audition",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass:dev": "node-sass public/sass/main.scss public/css/style.css ",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass:dev\"",
+    "devserver": "live-server",
+    "start:dev": "npm-run-all --parallel devserver watch:sass",
+    "start": "env-cmd -f config/dev.env nodemon index.js",
+    "dev": "nodemon index.js",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.comp.css -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Himanshu Khaitan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "concat": "^1.0.3",
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.17",
+    "moongoose": "0.0.5",
+    "path": "^0.12.7",
+    "sharp": "^0.27.1",
+    "validator": "^13.5.2"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Personal Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200,300;400;500;600;700&family=Syne:wght@400;600;711&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Literary Cricle | Auditions</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>01</span>About Natours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>02</span>Popular Tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>03</span>Your Benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>05</span>Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="header__main">
+        <img src="img/logo.png" alt="" class="header__logo">
+      </div>
+    </header>
+    <section class="login">
+      <div class="container">
+        <form action="/register" class="form" method="POST">
+          <div class="u-margin-bottom-medium">
+            <h2 class="heading-secondary">Register Now!</h2>
+          </div>
+          <div class="form__group">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              class="form__input"
+              name="name"
+              required
+            />
+            <label for="name" class="form__label">Name</label>
+          </div>
+          <div class="form__group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              class="form__input"
+              name="email"
+              required
+            />
+            <label for="email" class="form__label">Email Address</label>
+          </div>
+          <div class="form__group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              class="form__input"
+              required
+            />
+            <label for="email" class="form__label">Password</label>
+          </div>
+          
+
+          <div class="form__group">
+            <button class="btn btn--black">Register &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

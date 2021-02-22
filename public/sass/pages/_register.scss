@@ -1,0 +1,43 @@
+.container {
+    background-color: rgba($color-white, 0.7);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    padding: 5rem;
+}
+
+.login {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-black,
+      $color-grey-dark
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+  
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+  
+    &:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+  
+  
+  }
