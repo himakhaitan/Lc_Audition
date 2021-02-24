@@ -17,13 +17,7 @@ const userSchema = new mongoose.Schema({
             type: String,
             required: true,
             unique: true
-    },
-    tokens: [{
-        token: {
-            type: String,
-            required: true
-        }
-    }],
+    }
 })
 
 

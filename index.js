@@ -43,9 +43,6 @@ app.post('/register', async (req, res) => {
 
   }
 })
-app.get('/thank', (req, res) => {
-  res.sendFile(path.join(__dirname + '/public/thank.html'));
-})
 app.listen(port, () => {
   console.log(`Server started on the port ${port}`)
 })
