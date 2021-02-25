@@ -37,7 +37,7 @@ app.post('/register', async (req, res) => {
     res.sendFile(path.join(__dirname + '/public/thank.html'));
   } catch (error) {
       res.status(400).send({
-        error: "Opps! Email already in use!"
+        error: "Opps! Email already regitered!"
       })
   } {
 

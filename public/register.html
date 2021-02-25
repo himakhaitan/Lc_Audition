@@ -11,32 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200,300;400;500;600;700&family=Syne:wght@400;600;711&display=swap"
       rel="stylesheet"
     />
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Literary Cricle | Auditions</title>
   </head>
   <body>
     <div class="navigation">
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-  
-        <div class="navigation__background">&nbsp;</div>
-  
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>01</span>Instagram</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>02</span>Facebook</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>03</span>Twitter</a>
-            </li>
-          </ul>
-        </nav>
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>01</span>Home Page</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>02</span>Sign In</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>03</span>Register</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="header__main">
+        <img src="img/logo.png" alt="" class="header__logo" />
       </div>
     </header>
     <section class="login">
@@ -45,18 +51,18 @@
           <div class="u-margin-bottom-medium">
             <h2 class="heading-secondary">Register Now!</h2>
           </div>
-          <div class="form__group">
+          <div class="form__group --1">
             <input
               type="text"
               id="name"
-              placeholder="Name"
+              placeholder="Full Name"
               class="form__input"
               name="name"
               required
             />
-            <label for="name" class="form__label">Name</label>
+            <label for="name" class="form__label">Full Name</label>
           </div>
-          <div class="form__group">
+          <div class="form__group --2">
             <input
               type="email"
               id="email"
@@ -67,21 +73,97 @@
             />
             <label for="email" class="form__label">Email Address</label>
           </div>
-          <div class="form__group">
+          <div class="form__group --3">
             <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Password"
+              type="text"
+              id="branch"
+              name="branch"
+              placeholder="Department"
               class="form__input"
               required
             />
-            <label for="email" class="form__label">Password</label>
+            <label for="branch" class="form__label">Department</label>
           </div>
-          
+          <div class="form__group --4">
+            <input
+              type="text"
+              id="roll"
+              name="roll"
+              placeholder="Roll No."
+              class="form__input"
+              required
+            />
+            <label for="roll" class="form__label">Roll No.</label>
+          </div>
+          <div class="form__group --5">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number (Prefferably Whatsapp)"
+              class="form__input"
+              required
+            />
+            <label for="phone" class="form__label">Phone Number (Prefferably Whatsapp)</label>
+          </div>
+          <div class="form__group --6">
+            <input
+              type="text"
+              id="1"
+              name="what_is_between_you_and_LC_that_you_want_to_join_us"
+              placeholder="What is between you and LC that you want to join us?"
+              class="form__input"
+              required
+            />
+            <label for="1" class="form__label">What is between you and LC that you want to join us?</label>
+          </div>
+          <div class="form__group --7">
+            <input
+              type="text"
+              id="2"
+              name="list_the_tech_stack_you_are_comfortable_with"
+              placeholder="List the Tech Stack you are comfortable with."
+              class="form__input"
+              required
+            />
+            <label for="2" class="form__label">List the Tech Stack you are comfortable with.</label>
+          </div>
+          <div class="form__group --8">
+            <input
+              type="text"
+              id="3"
+              name="who_are_the_people_you_most_admire"
+              placeholder="Who are the people you most admire?"
+              class="form__input"
+              required
+            />
+            <label for="3" class="form__label">Who are the people you most admire?</label>
+          </div>
+          <div class="form__group --9">
+            <input
+              type="text"
+              id="4"
+              name="how_do_you_evaluate_success"
+              placeholder="How do you evaluate success?"
+              class="form__input"
+              required
+            />
+            <label for="4" class="form__label">How do you evaluate success?</label>
+          </div>
+          <div class="form__group --10">
+            <input
+              type="text"
+              id="5"
+              name="in_your_opinion_what_is_right_and_what_is_worng"
+              placeholder="In your opinion what is right and what is worng?"
+              class="form__input"
+              required
+            />
+            <label for="5" class="form__label">In your opinion what is right and what is worng?</label>
+          </div>
 
-          <div class="form__group">
-            <button class="btn btn--black">Next &rarr;</button>
+          <div class="form__group ">
+            <button class="btn btn--black">Register &rarr;</button>
           </div>
         </form>
       </div>
